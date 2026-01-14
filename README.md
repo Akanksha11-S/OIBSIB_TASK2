@@ -38,7 +38,8 @@ A modern, responsive portfolio website showcasing full-stack development skills,
 ### Installation & Usage
 
 1. **Clone the repository**
-   git clone https://github.com/yourusername/portfolio-website.git
+   ```bash
+   https://github.com/Akanksha11-S/OIBSIB_TASK2.git
 
-2. **Open the website**
+3. **Open the website**
    - Simply open `index.html` in your web browser
