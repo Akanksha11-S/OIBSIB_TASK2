@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akanksha Shinde | MERN Stack Developer</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body class="bg-slate-50 text-slate-800">
+    <!-- NAVBAR -->
+    <header
+      class="fixed w-full bg-white/90 backdrop-blur-xl border-b border-slate-200/50 z-50 slide-in shadow-sm"
+    >
+      <nav
+        class="max-w-7xl mx-auto px-4 sm:px-6 py-4 sm:py-5 flex justify-between items-center"
+      >
+        <a href="#" class="flex items-center gap-3 group">
+          <div class="relative">
+            <div
+              class="w-12 h-12 bg-gradient-to-br from-blue-900 via-blue-700 to-blue-600 rounded-xl flex items-center justify-center transform group-hover:rotate-6 transition-transform duration-300 shadow-lg"
+            >
+              <span class="text-white font-bold text-xl font-space">AS</span>
+            </div>
+            <div
+              class="absolute -inset-1 bg-gradient-to-br from-blue-900 to-blue-600 rounded-xl blur opacity-25 group-hover:opacity-40 transition-opacity"
+            ></div>
+          </div>
+          <div class="hidden sm:block">
+            <span class="text-xl font-bold gradient-text font-space block"
+              >Akanksha Shinde</span
+            >
+            <span class="text-xs text-slate-500 font-medium"
+              >Full Stack Developer</span
+            >
+          </div>
+        </a>
+
+        <ul class="hidden md:flex items-center gap-1">
+          <li>
+            <a
+              href="#about"
+              class="px-4 py-2 text-slate-700 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all font-medium text-sm flex items-center gap-2"
+            >
+              <i class="fas fa-user text-xs"></i> About
+            </a>
+          </li>
+          <li>
+            <a
+              href="#experience"
+              class="px-4 py-2 text-slate-700 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all font-medium text-sm flex items-center gap-2"
+            >
+              <i class="fas fa-briefcase text-xs"></i> Experience
+            </a>
+          </li>
+          <li>
+            <a
+              href="#skills"
+              class="px-4 py-2 text-slate-700 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all font-medium text-sm flex items-center gap-2"
+            >
+              <i class="fas fa-code text-xs"></i> Skills
+            </a>
+          </li>
+          <li>
+            <a
+              href="#projects"
+              class="px-4 py-2 text-slate-700 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all font-medium text-sm flex items-center gap-2"
+            >
+              <i class="fas fa-folder-open text-xs"></i> Projects
+            </a>
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="ml-2 px-6 py-2.5 bg-gradient-to-r from-blue-900 to-blue-600 text-white rounded-lg hover:shadow-lg hover:scale-105 transition-all font-semibold text-sm flex items-center gap-2"
+            >
+              <i class="fas fa-envelope text-xs"></i> Contact
+            </a>
+          </li>
+        </ul>
+
+        <button
+          id="mobileMenuBtn"
+          class="md:hidden p-2 text-slate-700 hover:text-blue-700 transition-colors"
+        >
+          <i class="fas fa-bars text-xl"></i>
+        </button>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobileMenu"
+        class="hidden md:hidden bg-white border-t border-slate-200"
+      >
+        <ul class="px-6 py-4 space-y-2">
+          <li>
+            <a
+              href="#about"
+              class="block px-4 py-3 text-slate-700 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all font-medium flex items-center gap-2"
+            >
+              <i class="fas fa-user text-xs"></i> About
+            </a>
+          </li>
+          <li>
+            <a
+              href="#experience"
+              class="block px-4 py-3 text-slate-700 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all font-medium flex items-center gap-2"
+            >
+              <i class="fas fa-briefcase text-xs"></i> Experience
+            </a>
+          </li>
+          <li>
+            <a
+              href="#skills"
+              class="block px-4 py-3 text-slate-700 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all font-medium flex items-center gap-2"
+            >
+              <i class="fas fa-code text-xs"></i> Skills
+            </a>
+          </li>
+          <li>
+            <a
+              href="#projects"
+              class="block px-4 py-3 text-slate-700 hover:text-blue-700 hover:bg-blue-50 rounded-lg transition-all font-medium flex items-center gap-2"
+            >
+              <i class="fas fa-folder-open text-xs"></i> Projects
+            </a>
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="block px-4 py-3 bg-gradient-to-r from-blue-900 to-blue-600 text-white rounded-lg font-semibold text-center flex items-center justify-center gap-2"
+            >
+              <i class="fas fa-envelope text-xs"></i> Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section
+      class="pt-24 sm:pt-28 md:pt-32 pb-12 sm:pb-16 md:pb-20 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 relative overflow-hidden"
+    >
+      <!-- Background decoration -->
+      <div class="absolute inset-0 overflow-hidden pointer-events-none">
+        <div
+          class="absolute top-20 left-10 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"
+        ></div>
+        <div
+          class="absolute top-40 right-10 w-72 h-72 bg-indigo-200 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"
+          style="animation-delay: 2s"
+        ></div>
+        <div
+          class="absolute -bottom-8 left-20 w-72 h-72 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"
+          style="animation-delay: 4s"
+        ></div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <!-- Left Content -->
+          <div class="fade-in-up">
+            <div
+              class="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-100 to-indigo-100 text-blue-900 rounded-full text-sm font-semibold mb-6 border border-blue-200"
+            >
+              <i class="fas fa-terminal"></i>
+              <span class="font-mono">&lt;Hello World /&gt;</span>
+              <span class="wave">👋</span>
+            </div>
+
+            <div
+              class="inline-block px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-semibold mb-4"
+            >
+              <i
+                class="fas fa-circle text-green-500 text-xs mr-2 animate-pulse"
+              ></i>
+              Available for opportunities
+            </div>
+
+            <h1
+              class="text-4xl sm:text-5xl md:text-6xl font-bold text-slate-900 mb-6 font-space"
+            >
+              Hi, I'm <br />
+              <span class="gradient-text typing-animation inline-block"
+                >Akanksha Shinde</span
+              >
+            </h1>
+
+            <p class="text-xl sm:text-2xl text-slate-600 mb-4 font-medium">
+              <i class="fas fa-laptop-code text-blue-700 mr-2"></i>
+              MERN Stack Developer & UI Designer
+            </p>
+
+            <p
+              class="text-base sm:text-lg text-slate-600 mb-8 leading-relaxed max-w-lg"
+            >
+              Third-year IT student specializing in building
+              <span class="font-semibold text-blue-900"
+                >scalable web applications</span
+              >
+              with modern technologies. Passionate about creating exceptional
+              <span class="font-semibold text-blue-900">user experiences</span>
+              through clean code and thoughtful design.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row flex-wrap gap-4 mb-8">
+              <a
+                href="#projects"
+                class="group px-6 py-3 bg-gradient-to-r from-blue-900 to-blue-600 text-white rounded-lg font-semibold hover:shadow-xl hover:scale-105 transition-all flex items-center justify-center gap-2 text-center"
+              >
+                <i class="fas fa-folder-open"></i>
+                View My Work
+                <i
+                  class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"
+                ></i>
+              </a>
+              <a
+                href="#contact"
+                class="px-6 py-3 border-2 border-blue-900 text-blue-900 rounded-lg font-semibold hover:bg-blue-900 hover:text-white transition-all flex items-center justify-center gap-2 text-center"
+              >
+                <i class="fas fa-envelope"></i>
+                Get In Touch
+              </a>
+            </div>
+
+            <!-- Tech Stack -->
+            <div
+              class="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 pt-6 border-t border-slate-200"
+            >
+              <span class="text-sm text-slate-500 font-semibold"
+                >Tech Stack:</span
+              >
+              <div
+                class="flex flex-wrap gap-3 sm:gap-4 text-2xl text-slate-600"
+              >
+                <i
+                  class="fab fa-react hover:text-cyan-500 hover:scale-125 transition-all cursor-pointer"
+                  title="React"
+                ></i>
+                <i
+                  class="fab fa-node hover:text-green-600 hover:scale-125 transition-all cursor-pointer"
+                  title="Node.js"
+                ></i>
+                <i
+                  class="fab fa-js hover:text-yellow-500 hover:scale-125 transition-all cursor-pointer"
+                  title="JavaScript"
+                ></i>
+                <i
+                  class="fab fa-html5 hover:text-orange-600 hover:scale-125 transition-all cursor-pointer"
+                  title="HTML5"
+                ></i>
+                <i
+                  class="fab fa-css3-alt hover:text-blue-600 hover:scale-125 transition-all cursor-pointer"
+                  title="CSS3"
+                ></i>
+                <i
+                  class="fab fa-figma hover:text-purple-600 hover:scale-125 transition-all cursor-pointer"
+                  title="Figma"
+                ></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right - Hero Image -->
+          <div class="relative">
+            <div class="float-animation">
+              <img
+                src="developer.png"
+                alt="Developer Illustration"
+                class="w-full h-auto drop-shadow-2xl rounded-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-12 sm:py-16 md:py-20 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-12 scroll-reveal">
+          <h2
+            class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4 font-space"
+          >
+            About <span class="gradient-text">Me</span>
+          </h2>
+          <div
+            class="w-20 h-1 bg-gradient-to-r from-blue-900 to-blue-600 mx-auto"
+          ></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div class="scroll-reveal">
+            <p class="text-lg text-slate-700 leading-relaxed mb-6">
+              I am a third-year
+              <span class="font-semibold text-blue-900"
+                >Information Technology student</span
+              >
+              at SIES Graduate School of Technology with a strong foundation in
+              MERN stack development and graphic design.
+            </p>
+            <p class="text-lg text-slate-700 leading-relaxed mb-6">
+              I specialize in creating responsive, accessible web applications
+              using
+              <span class="font-semibold">React, Node.js, and MongoDB</span>
+              while designing clean, modern interfaces using Figma and Canva.
+            </p>
+            <div class="flex flex-wrap gap-3">
+              <span
+                class="px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-semibold"
+                >Problem Solver</span
+              >
+              <span
+                class="px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-semibold"
+                >Team Player</span
+              >
+              <span
+                class="px-4 py-2 bg-purple-100 text-purple-800 rounded-full text-sm font-semibold"
+                >Quick Learner</span
+              >
+              <span
+                class="px-4 py-2 bg-orange-100 text-orange-800 rounded-full text-sm font-semibold"
+                >Creative</span
+              >
+            </div>
+          </div>
+
+          <!-- Education Timeline -->
+          <div class="scroll-reveal">
+            <h3
+              class="text-2xl font-bold text-slate-900 mb-6 font-space flex items-center gap-2"
+            >
+              <i class="fas fa-graduation-cap text-blue-700"></i>
+              Education
+            </h3>
+            <div class="space-y-6 relative pl-8 border-l-2 border-blue-200">
+              <div class="relative timeline-item">
+                <div>
+                  <p class="text-sm text-blue-700 font-semibold mb-1">
+                    2023 - 2027 (pursuing)
+                  </p>
+                  <h4 class="text-lg font-bold text-slate-900">
+                    B.E. Information Technology
+                  </h4>
+                  <p class="text-slate-600">
+                    SIES Graduate School of Technology, Mumbai
+                  </p>
+                </div>
+              </div>
+              <div class="relative timeline-item">
+                <div>
+                  <p class="text-sm text-blue-700 font-semibold mb-1">
+                    2021 - 2023
+                  </p>
+                  <h4 class="text-lg font-bold text-slate-900">HSC</h4>
+                  <p class="text-slate-600">
+                    Nav Krishna Valley Junior College, Sangli
+                  </p>
+                </div>
+              </div>
+              <div class="relative timeline-item">
+                <div>
+                  <p class="text-sm text-blue-700 font-semibold mb-1">
+                    2020 - 2021
+                  </p>
+                  <h4 class="text-lg font-bold text-slate-900">SSC</h4>
+                  <p class="text-slate-600">Alphonsa School, Miraj</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="py-20 bg-slate-100">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-12 scroll-reveal">
+          <h2
+            class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4 font-space"
+          >
+            Professional <span class="gradient-text">Experience</span>
+          </h2>
+          <div
+            class="w-20 h-1 bg-gradient-to-r from-blue-900 to-blue-600 mx-auto"
+          ></div>
+        </div>
+
+        <div class="max-w-4xl mx-auto">
+          <div
+            class="bg-white rounded-2xl shadow-lg p-8 card-hover scroll-reveal border-l-4 border-blue-700"
+          >
+            <div
+              class="flex flex-col md:flex-row md:items-center md:justify-between mb-6"
+            >
+              <div class="flex items-start gap-4 mb-4 md:mb-0">
+                <div
+                  class="w-14 h-14 bg-gradient-to-br from-blue-900 to-blue-600 rounded-xl flex items-center justify-center flex-shrink-0"
+                >
+                  <i class="fas fa-paint-brush text-white text-xl"></i>
+                </div>
+                <div>
+                  <h3 class="text-2xl font-bold text-slate-900 font-space">
+                    Graphic Design Intern
+                  </h3>
+                  <p class="text-blue-700 font-semibold">
+                    Adorebits Technology, Ahmedabad
+                  </p>
+                </div>
+              </div>
+              <div
+                class="text-sm font-semibold text-slate-600 bg-slate-100 px-4 py-2 rounded-lg"
+              >
+                <i class="fas fa-calendar-alt mr-2"></i>
+                April 2025 – November 2025
+              </div>
+            </div>
+
+            <div class="space-y-3 text-slate-700">
+              <div class="flex items-start gap-3">
+                <i class="fas fa-check-circle text-blue-700 mt-1"></i>
+                <p>
+                  Designed UI components and social media creatives using Figma
+                  and Canva, improving brand consistency across platforms
+                </p>
+              </div>
+              <div class="flex items-start gap-3">
+                <i class="fas fa-check-circle text-blue-700 mt-1"></i>
+                <p>
+                  Collaborated with development teams to improve user experience
+                  and implement design systems
+                </p>
+              </div>
+              <div class="flex items-start gap-3">
+                <i class="fas fa-check-circle text-blue-700 mt-1"></i>
+                <p>
+                  Maintained visual consistency across digital assets, resulting
+                  in 40% increase in engagement
+                </p>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap gap-2 mt-6">
+              <span
+                class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm font-semibold"
+                >Figma</span
+              >
+              <span
+                class="px-3 py-1 bg-pink-100 text-pink-800 rounded-full text-sm font-semibold"
+                >Canva</span
+              >
+              <span
+                class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-semibold"
+                >UI Design</span
+              >
+              <span
+                class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-semibold"
+                >Brand Design</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section
+      id="skills"
+      class="py-20 bg-gradient-to-br from-blue-50 via-indigo-50 to-slate-50"
+    >
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-12 scroll-reveal">
+          <h2
+            class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4 font-space"
+          >
+            Skills & <span class="gradient-text">Expertise</span>
+          </h2>
+          <div
+            class="w-20 h-1 bg-gradient-to-r from-blue-900 to-blue-600 mx-auto mb-4"
+          ></div>
+          <p class="text-slate-600 max-w-2xl mx-auto">
+            Proficient in modern web technologies and design tools with a focus
+            on creating scalable, user-friendly applications
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Frontend -->
+          <div
+            class="bg-white rounded-xl p-6 shadow-lg card-hover scroll-reveal"
+          >
+            <div
+              class="w-14 h-14 bg-gradient-to-br from-orange-500 to-red-500 rounded-xl flex items-center justify-center mb-4"
+            >
+              <i class="fas fa-laptop-code text-white text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-4 font-space">
+              Frontend
+            </h3>
+            <div class="space-y-3">
+              <div>
+                <div class="flex justify-between text-sm mb-1">
+                  <span class="text-slate-700 font-semibold">React.js</span>
+                  <span class="text-slate-500">90%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 90%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between text-sm mb-1">
+                  <span class="text-slate-700 font-semibold">JavaScript</span>
+                  <span class="text-slate-500">85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 85%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between text-sm mb-1">
+                  <span class="text-slate-700 font-semibold">HTML/CSS</span>
+                  <span class="text-slate-500">95%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 95%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between text-sm mb-1">
+                  <span class="text-slate-700 font-semibold">Tailwind CSS</span>
+                  <span class="text-slate-500">90%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 90%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Backend -->
+          <div
+            class="bg-white rounded-xl p-6 shadow-lg card-hover scroll-reveal"
+          >
+            <div
+              class="w-14 h-14 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center mb-4"
+            >
+              <i class="fas fa-server text-white text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-4 font-space">
+              Backend
+            </h3>
+            <div class="space-y-3">
+              <div>
+                <div class="flex justify-between text-sm mb-1">
+                  <span class="text-slate-700 font-semibold">Node.js</span>
+                  <span class="text-slate-500">85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 85%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between text-sm mb-1">
+                  <span class="text-slate-700 font-semibold">Express.js</span>
+                  <span class="text-slate-500">80%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 80%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between text-sm mb-1">
+                  <span class="text-slate-700 font-semibold">REST APIs</span>
+                  <span class="text-slate-500">85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 85%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Database -->
+          <div
+            class="bg-white rounded-xl p-6 shadow-lg card-hover scroll-reveal"
+          >
+            <div
+              class="w-14 h-14 bg-gradient-to-br from-blue-600 to-cyan-500 rounded-xl flex items-center justify-center mb-4"
+            >
+              <i class="fas fa-database text-white text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-4 font-space">
+              Database
+            </h3>
+            <div class="space-y-3">
+              <div>
+                <div class="flex justify-between text-sm mb-1">
+                  <span class="text-slate-700 font-semibold">MongoDB</span>
+                  <span class="text-slate-500">85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 85%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between text-sm mb-1">
+                  <span class="text-slate-700 font-semibold">Mongoose</span>
+                  <span class="text-slate-500">80%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 80%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between text-sm mb-1">
+                  <span class="text-slate-700 font-semibold">SQL</span>
+                  <span class="text-slate-500">70%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 70%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools & Design -->
+          <div
+            class="bg-white rounded-xl p-6 shadow-lg card-hover scroll-reveal"
+          >
+            <div
+              class="w-14 h-14 bg-gradient-to-br from-purple-600 to-pink-500 rounded-xl flex items-center justify-center mb-4"
+            >
+              <i class="fas fa-tools text-white text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-4 font-space">
+              Tools & Design
+            </h3>
+            <div class="space-y-3">
+              <div>
+                <div class="flex justify-between text-sm mb-1">
+                  <span class="text-slate-700 font-semibold">Git & GitHub</span>
+                  <span class="text-slate-500">90%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 90%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between text-sm mb-1">
+                  <span class="text-slate-700 font-semibold">Figma</span>
+                  <span class="text-slate-500">85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 85%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between text-sm mb-1">
+                  <span class="text-slate-700 font-semibold">Canva</span>
+                  <span class="text-slate-500">90%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 90%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="mt-16 scroll-reveal">
+          <h3
+            class="text-3xl font-bold text-slate-900 mb-8 text-center font-space"
+          >
+            Certifications
+          </h3>
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div
+              class="bg-white rounded-xl p-6 shadow-lg card-hover text-center"
+            >
+              <div
+                class="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-600 rounded-lg flex items-center justify-center mx-auto mb-4"
+              >
+                <i class="fab fa-java text-white text-xl"></i>
+              </div>
+              <h4 class="font-bold text-slate-900 mb-2">Java Programming</h4>
+              <p class="text-sm text-slate-600">Udemy</p>
+            </div>
+            <div
+              class="bg-white rounded-xl p-6 shadow-lg card-hover text-center"
+            >
+              <div
+                class="w-12 h-12 bg-gradient-to-br from-blue-600 to-cyan-500 rounded-lg flex items-center justify-center mx-auto mb-4"
+              >
+                <i class="fas fa-mobile-alt text-white text-xl"></i>
+              </div>
+              <h4 class="font-bold text-slate-900 mb-2">
+                Responsive Web Design
+              </h4>
+              <p class="text-sm text-slate-600">freeCodeCamp</p>
+            </div>
+            <div
+              class="bg-white rounded-xl p-6 shadow-lg card-hover text-center"
+            >
+              <div
+                class="w-12 h-12 bg-gradient-to-br from-green-600 to-emerald-500 rounded-lg flex items-center justify-center mx-auto mb-4"
+              >
+                <i class="fas fa-chart-line text-white text-xl"></i>
+              </div>
+              <h4 class="font-bold text-slate-900 mb-2">Data Analytics</h4>
+              <p class="text-sm text-slate-600">Deloitte</p>
+            </div>
+            <div
+              class="bg-white rounded-xl p-6 shadow-lg card-hover text-center"
+            >
+              <div
+                class="w-12 h-12 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-lg flex items-center justify-center mx-auto mb-4"
+              >
+                <i class="fab fa-aws text-white text-xl"></i>
+              </div>
+              <h4 class="font-bold text-slate-900 mb-2">AWS Cloud</h4>
+              <p class="text-sm text-slate-600">Amazon Web Services</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="py-12 sm:py-16 md:py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-12 scroll-reveal">
+          <h2
+            class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4 font-space"
+          >
+            Featured <span class="gradient-text">Projects</span>
+          </h2>
+          <div
+            class="w-20 h-1 bg-gradient-to-r from-blue-900 to-blue-600 mx-auto mb-4"
+          ></div>
+          <p class="text-slate-600 max-w-2xl mx-auto">
+            A showcase of my recent work in web development and design
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Project 1 -->
+          <div
+            class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover scroll-reveal project-card relative group"
+          >
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-slate-900 mb-2 font-space">
+                EduCycle Marketplace
+              </h3>
+              <p class="text-slate-600 mb-4">
+                Frontend campus marketplace with role-based dashboards, product
+                listings, and cart functionality
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-semibold"
+                  >React</span
+                >
+                <span
+                  class="px-3 py-1 bg-cyan-100 text-cyan-800 rounded-full text-xs font-semibold"
+                  >TypeScript</span
+                >
+                <span
+                  class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-xs font-semibold"
+                  >Tailwind</span
+                >
+              </div>
+              <div class="flex gap-3">
+                <a
+                  href="#"
+                  class="text-blue-700 hover:text-blue-900 font-semibold text-sm flex items-center gap-1"
+                >
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+                <a
+                  href="#"
+                  class="text-slate-700 hover:text-slate-900 font-semibold text-sm flex items-center gap-1"
+                >
+                  <i class="fab fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div
+            class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover scroll-reveal project-card relative group"
+          >
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-slate-900 mb-2 font-space">
+                Personal Portfolio
+              </h3>
+              <p class="text-slate-600 mb-4">
+                Responsive portfolio website showcasing skills, projects, and
+                professional experience
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-xs font-semibold"
+                  >HTML</span
+                >
+                <span
+                  class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-semibold"
+                  >CSS</span
+                >
+                <span
+                  class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-xs font-semibold"
+                  >JavaScript</span
+                >
+              </div>
+              <div class="flex gap-3">
+                <a
+                  href="#"
+                  class="text-blue-700 hover:text-blue-900 font-semibold text-sm flex items-center gap-1"
+                >
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+                <a
+                  href="#"
+                  class="text-slate-700 hover:text-slate-900 font-semibold text-sm flex items-center gap-1"
+                >
+                  <i class="fab fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div
+            class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover scroll-reveal project-card relative group"
+          >
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-slate-900 mb-2 font-space">
+                Startup Landing Page
+              </h3>
+              <p class="text-slate-600 mb-4">
+                High-conversion landing page with mobile responsiveness and
+                performance optimization
+              </p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span
+                  class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-xs font-semibold"
+                  >HTML5</span
+                >
+                <span
+                  class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-semibold"
+                  >CSS3</span
+                >
+                <span
+                  class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-xs font-semibold"
+                  >Responsive</span
+                >
+              </div>
+              <div class="flex gap-3">
+                <a
+                  href="#"
+                  class="text-blue-700 hover:text-blue-900 font-semibold text-sm flex items-center gap-1"
+                >
+                  <i class="fas fa-external-link-alt"></i> Live Demo
+                </a>
+                <a
+                  href="#"
+                  class="text-slate-700 hover:text-slate-900 font-semibold text-sm flex items-center gap-1"
+                >
+                  <i class="fab fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section
+      id="contact"
+      class="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-slate-100 via-blue-50 to-indigo-50"
+    >
+      <div class="max-w-5xl mx-auto px-4 sm:px-6">
+        <div class="text-center mb-12 scroll-reveal">
+          <h2
+            class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4 font-space"
+          >
+            Get In <span class="gradient-text">Touch</span>
+          </h2>
+          <div
+            class="w-20 h-1 bg-gradient-to-r from-blue-900 to-blue-600 mx-auto mb-4"
+          ></div>
+          <p class="text-slate-600 max-w-2xl mx-auto">
+            Have a project in mind or want to collaborate? I'd love to hear from
+            you!
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Contact Form -->
+          <div class="bg-white rounded-2xl shadow-xl p-8 scroll-reveal">
+            <form
+              action="https://formsubmit.co/akankshashinde158@gmail.com"
+              method="POST"
+              class="space-y-6"
+            >
+              <!-- Honeypot -->
+              <input type="text" name="_honey" style="display: none" />
+
+              <!-- Disable Captcha -->
+              <input type="hidden" name="_captcha" value="false" />
+
+              <!-- Subject -->
+              <input
+                type="hidden"
+                name="_subject"
+                value="New Portfolio Contact Form Submission"
+              />
+              <div>
+                <label class="block text-sm font-semibold text-slate-700 mb-2">
+                  <i class="fas fa-user mr-2 text-blue-700"></i>Your Name
+                </label>
+                <input
+                  type="text"
+                  name="name"
+                  required
+                  class="w-full px-4 py-3 rounded-lg border-2 border-slate-200 focus:border-blue-600 focus:outline-none transition-colors"
+                  placeholder="Your Name"
+                />
+              </div>
+              <div>
+                <label class="block text-sm font-semibold text-slate-700 mb-2">
+                  <i class="fas fa-envelope mr-2 text-blue-700"></i>Your Email
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  class="w-full px-4 py-3 rounded-lg border-2 border-slate-200 focus:border-blue-600 focus:outline-none transition-colors"
+                  placeholder="name@example.com"
+                />
+              </div>
+              <div>
+                <label class="block text-sm font-semibold text-slate-700 mb-2">
+                  <i class="fas fa-comment mr-2 text-blue-700"></i>Message
+                </label>
+                <textarea
+                  name="message"
+                  required
+                  rows="5"
+                  class="w-full px-4 py-3 rounded-lg border-2 border-slate-200 focus:border-blue-600 focus:outline-none transition-colors resize-none"
+                  placeholder="Your message here..."
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="w-full py-3 bg-gradient-to-r from-blue-900 to-blue-600 text-white rounded-lg font-semibold hover:shadow-xl transition-all flex items-center justify-center gap-2"
+              >
+                <i class="fas fa-paper-plane"></i>
+                Send Message
+              </button>
+            </form>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="space-y-6 scroll-reveal">
+            <div class="bg-white rounded-2xl shadow-lg p-6 card-hover">
+              <div class="flex items-start gap-4">
+                <div
+                  class="w-12 h-12 bg-gradient-to-br from-blue-900 to-blue-600 rounded-lg flex items-center justify-center flex-shrink-0"
+                >
+                  <i class="fas fa-envelope text-white text-xl"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-slate-900 mb-1">Email</h4>
+                  <p class="text-slate-600">
+                    <a
+                      href="mailto:akankshashinde158@gmail.com"
+                      class="hover:text-blue-700 transition-colors"
+                    >
+                      akankshashinde158@gmail.com
+                    </a>
+                  </p>
+                  <a
+                    href="mailto:akankshashinde158@gmail.com"
+                    class="text-blue-700 hover:text-blue-900 text-sm font-semibold mt-2 inline-block"
+                  >
+                    Send an email <i class="fas fa-arrow-right ml-1"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-lg p-6 card-hover">
+              <div class="flex items-start gap-4">
+                <div
+                  class="w-12 h-12 bg-gradient-to-br from-green-600 to-emerald-500 rounded-lg flex items-center justify-center flex-shrink-0"
+                >
+                  <i class="fas fa-map-marker-alt text-white text-xl"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-slate-900 mb-1">Location</h4>
+                  <p class="text-slate-600">Mumbai, Maharashtra, India</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-lg p-6 card-hover">
+              <div class="flex items-start gap-4">
+                <div
+                  class="w-12 h-12 bg-gradient-to-br from-purple-600 to-pink-500 rounded-lg flex items-center justify-center flex-shrink-0"
+                >
+                  <i class="fas fa-share-alt text-white text-xl"></i>
+                </div>
+                <div class="flex-1">
+                  <h4 class="font-bold text-slate-900 mb-3">Let's Connect</h4>
+                  <p class="text-slate-600 text-sm mb-4">
+                    Follow me on social media
+                  </p>
+                  <div class="flex gap-3">
+                    <a
+                      href="https://www.linkedin.com/in/akanksha-shinde-530766356"
+                      class="group relative"
+                    >
+                      <div
+                        class="w-11 h-11 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg flex items-center justify-center text-white hover:shadow-lg transition-all hover:-translate-y-1"
+                      >
+                        <i class="fab fa-linkedin-in text-lg"></i>
+                      </div>
+                      <span
+                        class="absolute -bottom-6 left-1/2 -translate-x-1/2 text-xs text-slate-600 opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap"
+                        >LinkedIn</span
+                      >
+                    </a>
+                    <a
+                      href="https://github.com/Akanksha11-S"
+                      class="group relative"
+                    >
+                      <div
+                        class="w-11 h-11 bg-gradient-to-br from-slate-800 to-slate-900 rounded-lg flex items-center justify-center text-white hover:shadow-lg transition-all hover:-translate-y-1"
+                      >
+                        <i class="fab fa-github text-lg"></i>
+                      </div>
+                      <span
+                        class="absolute -bottom-6 left-1/2 -translate-x-1/2 text-xs text-slate-600 opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap"
+                        >GitHub</span
+                      >
+                    </a>
+                    <a href="#" class="group relative">
+                      <div
+                        class="w-11 h-11 bg-gradient-to-br from-purple-600 to-pink-600 rounded-lg flex items-center justify-center text-white hover:shadow-lg transition-all hover:-translate-y-1"
+                      >
+                        <i class="fas fa-globe text-lg"></i>
+                      </div>
+                      <span
+                        class="absolute -bottom-6 left-1/2 -translate-x-1/2 text-xs text-slate-600 opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap"
+                        >Portfolio</span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12">
+        <div class="grid md:grid-cols-4 gap-8 mb-8">
+          <!-- Brand Section -->
+          <div class="md:col-span-2">
+            <div class="flex items-center gap-3 mb-4">
+              <div
+                class="w-12 h-12 bg-gradient-to-br from-blue-600 to-blue-400 rounded-xl flex items-center justify-center shadow-lg"
+              >
+                <span class="text-white font-bold text-xl font-space">AS</span>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white font-space">
+                  Akanksha Shinde
+                </h3>
+                <p class="text-sm text-slate-400">Full Stack Developer</p>
+              </div>
+            </div>
+
+            <p class="text-slate-400 mb-4 max-w-sm">
+              Building digital experiences with modern web technologies. Let's
+              create something amazing together!
+            </p>
+
+            <div class="flex gap-3">
+              <!-- LinkedIn -->
+              <a
+                href="https://www.linkedin.com/in/akanksha-shinde-530766356"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-10 h-10 bg-slate-800 hover:bg-blue-600 rounded-lg flex items-center justify-center transition-all hover:scale-110 group"
+                title="LinkedIn"
+              >
+                <i
+                  class="fab fa-linkedin-in text-slate-400 group-hover:text-white transition-colors"
+                ></i>
+              </a>
+
+              <!-- GitHub -->
+              <a
+                href="https://github.com/Akanksha11-S"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-10 h-10 bg-slate-800 hover:bg-slate-700 rounded-lg flex items-center justify-center transition-all hover:scale-110 group"
+                title="GitHub"
+              >
+                <i
+                  class="fab fa-github text-slate-400 group-hover:text-white transition-colors"
+                ></i>
+              </a>
+
+              <!-- Email -->
+              <a
+                href="mailto:akankshashinde158@gmail.com"
+                class="w-10 h-10 bg-slate-800 hover:bg-gradient-to-r hover:from-blue-600 hover:to-blue-500 rounded-lg flex items-center justify-center transition-all hover:scale-110 group"
+                title="Email"
+              >
+                <i
+                  class="fas fa-envelope text-slate-400 group-hover:text-white transition-colors"
+                ></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h4 class="text-white font-bold mb-4 font-space">Quick Links</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#about"
+                  class="text-slate-400 hover:text-white transition-colors flex items-center gap-2 group"
+                >
+                  <i
+                    class="fas fa-chevron-right text-xs group-hover:translate-x-1 transition-transform"
+                  ></i>
+                  About Me
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#experience"
+                  class="text-slate-400 hover:text-white transition-colors flex items-center gap-2 group"
+                >
+                  <i
+                    class="fas fa-chevron-right text-xs group-hover:translate-x-1 transition-transform"
+                  ></i>
+                  Experience
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#skills"
+                  class="text-slate-400 hover:text-white transition-colors flex items-center gap-2 group"
+                >
+                  <i
+                    class="fas fa-chevron-right text-xs group-hover:translate-x-1 transition-transform"
+                  ></i>
+                  Skills
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#projects"
+                  class="text-slate-400 hover:text-white transition-colors flex items-center gap-2 group"
+                >
+                  <i
+                    class="fas fa-chevron-right text-xs group-hover:translate-x-1 transition-transform"
+                  ></i>
+                  Projects
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div>
+            <h4 class="text-white font-bold mb-4 font-space">Contact</h4>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3 text-slate-400">
+                <i class="fas fa-envelope text-blue-400 mt-1"></i>
+                <div>
+                  <p class="text-xs text-slate-500 mb-1">Email</p>
+                  <a
+                    href="mailto:akankshashinde158@gmail.com"
+                    class="hover:text-white transition-colors text-sm"
+                  >
+                    akankshashinde158@gmail.com
+                  </a>
+                </div>
+              </li>
+
+              <li class="flex items-start gap-3 text-slate-400">
+                <i class="fas fa-map-marker-alt text-blue-400 mt-1"></i>
+                <div>
+                  <p class="text-xs text-slate-500 mb-1">Location</p>
+                  <p class="text-sm">Mumbai, India</p>
+                </div>
+              </li>
+
+              <li class="flex items-start gap-3 text-slate-400">
+                <i class="fas fa-clock text-blue-400 mt-1"></i>
+                <div>
+                  <p class="text-xs text-slate-500 mb-1">Availability</p>
+                  <p class="text-sm">Open to opportunities</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="border-t border-slate-800 pt-8">
+          <div
+            class="flex flex-col md:flex-row justify-between items-center gap-4"
+          >
+            <p class="text-slate-400 text-sm text-center md:text-left">
+              © 2025 Akanksha Shinde. All rights reserved.
+            </p>
+            <div class="flex items-center gap-6 text-sm">
+              <a
+                href="#"
+                class="text-slate-400 hover:text-white transition-colors"
+              >
+                Privacy Policy
+              </a>
+              <a
+                href="#"
+                class="text-slate-400 hover:text-white transition-colors"
+              >
+                Terms of Use
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
