@@ -3,7 +3,7 @@
 A modern, responsive portfolio website showcasing full-stack development skills, experience, and projects. Focused on clean design, smooth animations, and exceptional user experience.
 
 ✨ **Live Demo**  
-🔗 [View the live website](#)
+🔗 View the live website: https://akanksha11-s.github.io/OIBSIB_TASK2/
 
 ---
 
